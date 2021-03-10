@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color:blue;
+            display:block;
+        }
+        #div2{
+            background-color:yellow;
+            display:none;
+        }
+        #div3{
+            background-color:green;
+            display:none;
+        }
+        #div4{
+            background-color:black;
+            position:absolute;
+            left:1%;
+            top:5%;
+            height:30px;
+            width:100px;
+            transition-duration:2s;
+            transform-origin: center center;
+            color:white;
+        }
+        #form1{
+            position: relative;
+            top:20%;
+            left:10%;
+            visibility:hidden;
+            transition-delay:2s;
+            transition-duration: 0.1s;
+        }
+        #txt{
+            position: relative;
+            top:0px;
+            margin:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" onclick = "replace('div1','div2')">div1</div>
+    <div id="div2" onclick = "replace('div2','div3')">div2</div>
+    <div id="div3" onclick = "replace('div3','div1')">div3</div>
+    <div id="div4" onclick = "trans()"><p id="txt">Click Me!!</p>
+        <form id="form1">
+            <input name="fname" type="text">
+        </form>
+    </div>
+    <div id="id5"></div>
+</body>
+<script src="12animation.js"></script>
+</html>

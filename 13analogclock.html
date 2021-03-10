@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        height:500px;
+        width:500px;
+        position: absolute;
+        top:10%;
+        left:40%;
+    }
+    #base{
+        height:300px;
+        width:300px;
+        border-radius:50%;
+        border:3px solid black;
+    }
+    #hour{
+        height:90px;
+        width:5px;
+        position:absolute;
+        background-color:black;
+        top: 70px;
+        left:150px;
+        transform-origin:bottom center;
+    }
+    #minute{
+        height:120px;
+        width:3px;
+        position:absolute;
+        background-color:greenyellow;
+        top:40px;
+        left:151px;
+        transform-origin:bottom center;
+    }
+    #second{
+        height: 150px;
+        width:1px;
+        position:absolute;
+        background-color: blue;
+        top:0px;
+        left:150px;
+        transform:none;
+        transform-origin:bottom center;
+    }
+
+</style>
+<body>
+    <div id="main">
+        <div id="base"></div>
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+</body>
+<script src="13analogclock.js"></script>
+</html>
